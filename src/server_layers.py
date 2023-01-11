@@ -75,6 +75,7 @@ class Layers(tl.HasTraits):
     _ogc_layers_cache = tl.Dict()
     convert_requests_to_default_crs = tl.Bool(True)
     skip_failed = tl.Bool(False)
+    persistent_layers = tl.List()
 
     @tl.default("s3")
     def _default_s3(self):
@@ -153,7 +154,7 @@ class Layers(tl.HasTraits):
             if l is not None:
                 ogc_layers.append(l)
 
-        return ogc_layers
+        return self.persistent_layers + ogc_layers
 
     def make_ogc_layer(self, name, layer, abstract=""):
         node = Node.from_json(json.dumps(layer["definition"]))
