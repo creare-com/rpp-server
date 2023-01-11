@@ -1,0 +1,4 @@
+Flask-Cors
+markdown
+s3fs
+boto3

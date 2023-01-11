@@ -1,0 +1,11 @@
+{
+    "PUBLISHED_PIPELINES": {
+        "path": "data/layers.json",
+        "secret_key": ["onlySomeUsersKnowThis"]
+    },
+    "PATH_PLANNING_CACHE_PATH": "data/cache/",
+    "LOG_FILE_PATH": "data/podpac.log",
+    "RAM_CACHE_MAX_BYTES": 2E9,
+    "DEFAULT_CACHE": ["ram"],
+    "ROOT_PATH": "data"
+}

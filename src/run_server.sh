@@ -1,0 +1,1 @@
+gunicorn -b 0.0.0.0:8000 -t 0 server:app

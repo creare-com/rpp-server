@@ -1,0 +1,1 @@
+{"TestLayer": {"author_key": "onlySomeUsersKnowThis", "definition": {"SinCoords": {"node": "core.algorithm.utility.SinCoords", "style": {"colormap": "RdBu", "clim": [-0.5, 0.5]}}, "podpac_version": "3.2.0"}, "expiration": null}}
