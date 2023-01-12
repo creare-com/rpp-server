@@ -55,24 +55,6 @@ print('STARTING LAYERS')
 print(LAYERS.ogc_layers)
 print("="*80)
 
-#########################
-#     AUTHENTICATION    #
-#########################
-if "ACCESS_TOKENS" not in settings:
-    print("WARNING: ACCESS_TOKENS have not been configured for this server. Users will NOT be able to log in.")
-    print("""To set up authentication token for a new user use:
-    >>> import uuid, hashlib
-    >>> new_token = str(uuid.uuid4())
-    >>> print("Share this token with the user", new_token)
-    >>> access_token = hashlib.sha256(new_token.encode('utf-8')).hexdigest()
-    >>> print("Manually add access_token to `settings.json` file, or evaluate code below:", access_token)
-    >>> from podpac import settings
-    >>> access_tokens = settings.get("ACCESS_TOKENS", [])
-    >>> access_tokens.append(access_token)
-    >>> settings["ACCESS_TOKENS"] = access_tokens
-    >>> settings.save()
-    """)
-
 ############################
 #    SETTING UP THE APP    #
 ############################
